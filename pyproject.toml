@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "VerySeriousButton-vsbutil"
-description = "Framework and tools for Automated Cell Culture Splitter protocol scripts"
-requires-python = ">=3.6"
+description = "CLI utility and Python driver for configuring Very Serious Buttons"
+requires-python = ">=3.8"
 license = { file = "LICENSE" }
 authors = [
   {name = "GC", email = "gc@grenlabs.com"},
@@ -19,13 +19,13 @@ dependencies = [
 dynamic = ["version"]
 
 [project.scripts]
-vsbutil = "vsbutil:run"
+vsbutil = "vsbutil.cli:run"
 
 [tool.setuptools]
 packages = [
-  "vsbutil.py"
+  "vsbutil",
   ]
 
 [tool.setuptools_scm]
 root = "."
-write_to = "_version.py"
+write_to = "vsbutil/_version.py"
