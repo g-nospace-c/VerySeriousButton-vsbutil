@@ -19,17 +19,19 @@ Alternatively, use [pipx](https://github.com/pypa/pipx) to install in a dedicate
 pipx install "git+https://github.com/g-nospace-c/VerySeriousButton-vsbutil.git"
 ```
 
+To run `vsbutil` in place without installing the package, run `python vsbutil.py` here.
+
 ## Usage:
-See online help (```./vsbutil.py --help```)
+See online help (`vsbutil --help`) for available commands and options.
 
 ## Examples:
-    ./vsbutil.py setjoy
-    ./vsbutil.py saveconfig
+    vsbutil setjoy
+    vsbutil saveconfig
 
-    ./vsbutil.py setkey ctrl+c
-    ./vsbutil.py saveconfig
+    vsbutil setkey ctrl+c
+    vsbutil saveconfig
 
-    ./vsbutil.py setkeys shift+h e l l o comma space w o r l d shift+1
+    vsbutil setkeys shift+h e l l o comma space w o r l d shift+1
 
 ## Notes:
 Configuration changes made by the "setjoy" or "setkey" commands are applied in RAM and will not persist across a reset unless you explicitly call the "saveconfig" command afterward. However, the "setkeys" commits changes to nonvolatile storage immediately.
