@@ -1,11 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# Version: 1.0
-# Requires python-usbhid (https://pypi.python.org/pypi/hidapi/0.7.99-4)
-
 # vsbutil: Service utility for the Very Serious Button
-# © 2014 Greg Courville <Greg_Courville@GregLabs.com>
+# © 2014 Greg Courville <gc@grenlabs.com>
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -185,6 +182,7 @@ MODKEYS = {
 
 class VerySeriousButtonNotFound(IOError):
     pass
+
 
 class VerySeriousButton(object):
     READ_INTERVAL = 0.02
